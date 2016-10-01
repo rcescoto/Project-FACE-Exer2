@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Twitter</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97P.6/js/materialize.min.js"></script>
+	<script src="js/tweek.js"></script>
+</head>
+
+<body>
+    <nav class="white z-depth-1" id="top">
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="blue-text material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li class="active"><a href="#" class="grey-text text-darken-1"><span class="Icon Icon--home"></span>Home</a></li>
+                <li><a href="#" class="grey-text text-darken-1"><span class="Icon Icon--notifications"></span>Notifications</a></li>
+                <li><a href="#" class="grey-text text-darken-1"><span class="Icon Icon--message"></span>Messages</a></li>
+            </ul>
+            <a href="#" class="brand-logo center"><i class="blue-text fa fa-twitter" aria-hidden="true"></i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="grey-text text-darken-1 dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                <a class="btn grey darken-1 waves-effect waves-light  z-depth-0" href="#" id="composeTweet"><span class="Icon Icon--tweet"></span>Tweet</a>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l4">
+                <div class="card small white z-depth-0" id="profile-Card">
+                    <div class="card-image">
+                        <div id="profile-Cover">
+                            <img src="https://pbs.twimg.com/profile_banners/582606884/1463857917/1500x500">
+                        </div>
+                        <div id="profile-Icon-Holder">
+                            <img id="profile-Icon" src="https://pbs.twimg.com/profile_images/780466395750412288/dJb8MZzD_bigger.jpg">
+                        </div>
+                    </div>
+                    <div class="card-content" id="profile-Card-Info">
+                        <span id="profile-Name">Rain Tomista</span>
+                        <p id="profile-Handle">@raintomista</p>
+                    </div>
+                </div>
+                <div class="card small white z-depth-0" id="trending">
+                    <div class="card-content">
+                        <strong id="trend-title">Trends</strong>
+                        <span>·</span>
+                        <a href="#" id="change-Trend">Change</a>
+                        <ul>
+                            <li>
+                                <strong>#AkoNalangBes</strong>
+                                <span>1.5M Tweets</span>
+                            </li>
+                            <li>
+                                <strong>AWTSU ANSAKIT BES</strong>
+                                <span>500K Tweets</span>
+                            </li>
+                            <li>
+                                <strong>#PaasaKaGago</strong>
+                                <span>238K Tweets</span>
+                            </li>
+                            <li>
+                                <strong>Bes</strong>
+                                <span>450K Tweets</span>
+                            </li>
+                            <li>
+                                <strong>HUHUHUHUH</strong>
+                                <span>238K Tweets</span>
+                            </li>
+                            <li>
+                                <strong>#BuhaySingle</strong>
+                                <span>25K Tweets</span>
+                            </li>
+                            <li>
+                                <strong>#WhatIf</strong>
+                                <span>10K Tweets</span>
+                            </li>
+                            <li>
+                                <strong>#WhatElseIf</strong>
+                                <span>35K Tweets</span>
+                            </li>
+                            <li>
+                                <strong>#RoadToTres</strong>
+                                <span>50K Tweets</span>
+                            </li>
+                            <li>
+                                <strong>SING OR SINGKO?</strong>
+                                <span>5K Tweets</span>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l8">
+                <div class="card small white z-depth-0" id="feed-Card">
+                    <div class="feed-Tweetbox">
+                        <input placeholder="What's happening?"/>
+                    </div>
+                    <div id="feed-Timeline"></div>
+                    <div class="feed-End">
+                        <span class="grey-text text-darken-1"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                        <span><a class="grey-text text-darken-1" href="#top">Back to top ↑</a></span>
+                    </div>
+
+               </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
